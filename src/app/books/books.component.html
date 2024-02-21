@@ -1,0 +1,8 @@
+<h1>{{title}}</h1>
+<li *ngFor = 'let book of books'>
+    {{book.title | titlecase}}<br/>
+    {{book.author | titlecase}}<br/>
+    {{book.price | currency: 'GBP'}}<br/>
+    {{book.releaseDate | date: 'shortDate'}}<br/>
+    {{book.rating | percent: '1.1-2'}} of users liked this book
+</li>
